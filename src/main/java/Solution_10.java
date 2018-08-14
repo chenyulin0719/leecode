@@ -2,16 +2,15 @@ public class Solution_10 implements Solution {
     @Override
     public void solve() {
         System.out.println("Problem 10:");
-        assert isMatch("aa", "a") == false;
-        assert isMatch("aa", "aa") == true;
-        assert isMatch("aaa", "aa") == false;
-        assert isMatch("aa", "a*") == true;
-        assert isMatch("aa", ".*") == true;
-        assert isMatch("ab", ".*") == true;
-        assert isMatch("aab", "c*a*b") == true;
+        assert !isMatch("aa", "a");
+        assert !isMatch("aa", "aa");
+        assert !isMatch("aaa", "aa");
+        assert !isMatch("aa", "a*");
+        assert !isMatch("aa", ".*");
+        assert !isMatch("ab", ".*");
+        assert !isMatch("aab", "c*a*b");
     }
-
-    public boolean isMatch(String s, String p) {
+    private boolean isMatch(String s, String p) {
         if (s.isEmpty()) {
             if (p.isEmpty()) {
                 return true;
@@ -42,5 +41,4 @@ public class Solution_10 implements Solution {
             return false;
         }
     }
-
 }
