@@ -2,7 +2,6 @@ public class Solution_10 implements Solution {
     @Override
     public void solve() {
         System.out.println("Problem 10:");
-
         assert isMatch("aa", "a") == false;
         assert isMatch("aa", "aa") == true;
         assert isMatch("aaa", "aa") == false;
