@@ -14,17 +14,9 @@ public class Solution_9 {
 
       right = right * 10 + remainder;
       left = quotient;
-
+      //比較 left 和 right 才會有交集，如果只比較x 和 right ，當5,4,3,2,1 時不會跳出迴圈
     } while (left > right);
 
-    if (left == right) {
-      return true;
-    }
-
-    if (left == (right / 10)) {
-      return true;
-    }
-
-    return false;
+    return left == right || left == (right / 10);
   }
 }

@@ -22,6 +22,7 @@ public class Solution_8 {
 
     int output = 0;
     for (; i < str.length(); i++) {
+      //利用 ACSII 特性判斷是否為數字
       int digit = str.charAt(i) - '0';
       if (digit < 0 || digit > 9) {
         return output;

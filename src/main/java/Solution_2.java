@@ -1,18 +1,6 @@
-public class Solution_2 implements Solution {
+import Utils.ListNode;
 
-  public void solve() {
-    System.out.println("Problem 2:");
-
-    ListNode list1 = new ListNode(3).sticky(4).sticky(2).sticky(2);
-    ListNode list2 = new ListNode(4).sticky(6).sticky(5);
-
-    check(list1);
-    check(list2);
-
-    check(addTwoNumbers(list1, list2));
-
-  }
-
+public class Solution_2 {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     int v1;
     int v2;
@@ -49,31 +37,4 @@ public class Solution_2 implements Solution {
     return dummyHead.next;
   }
 
-  private class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-      val = x;
-    }
-
-    ListNode sticky(int x) {
-      ListNode head = new ListNode(x);
-      head.next = this;
-      return head;
-    }
-
-  }
-
-  private void check(ListNode listNode) {
-    if (listNode == null) {
-      throw new IllegalArgumentException("Null list.");
-    }
-    System.out.print("List values:");
-    do {
-      System.out.print(listNode.val + " ");
-      listNode = listNode.next;
-    } while (listNode != null);
-    System.out.println();
-  }
 }
