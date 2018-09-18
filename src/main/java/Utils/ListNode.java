@@ -10,7 +10,7 @@ public class ListNode {
     this.next = null;
   }
 
-  public ListNode sticky(int x) {
+  public ListNode stickyToHead(int x) {
     ListNode head = new ListNode(x);
     head.next = this;
     return head;
