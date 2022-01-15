@@ -1,3 +1,7 @@
+import math
+from typing import List
+
+
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         stack = []
@@ -13,7 +17,7 @@ class Solution:
             elif annotation == '*':
                 stack.append(a * b)
             elif annotation == '/':
-                stack.append(a / b)
+                stack.append(int(a / b))
             return stack
 
         for token in tokens:
