@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_wordBreak(self):
-        from solution_146 import LRUCache
+        from solution_0146 import LRUCache
 
         lRUCache = LRUCache(2)
         lRUCache.put(1, 1)

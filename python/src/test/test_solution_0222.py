@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_countNodes(self):
-        from solution_222 import Solution
+        from solution_0222 import Solution
         from utils import TreeNode
         solution = Solution()
         root = TreeNode(1, TreeNode(2), TreeNode(3))

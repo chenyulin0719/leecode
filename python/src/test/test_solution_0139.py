@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_wordBreak(self):
-        from solution_139 import Solution
+        from solution_0139 import Solution
         solution = Solution()
         s1 = "leetcode"
         word_dict1 = ["leet", "code"]

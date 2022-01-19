@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_canFinish(self):
-        from solution_416 import Solution
+        from solution_0416 import Solution
         solution = Solution()
         nums1 = [1, 5, 11, 5]
         nums2 = [1, 2, 3, 5]

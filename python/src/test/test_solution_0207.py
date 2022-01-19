@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_canFinish(self):
-        from solution_207 import Solution
+        from solution_0207 import Solution
         solution = Solution()
         numCourses1 = 2
         prerequisites1 = [[1, 0]]

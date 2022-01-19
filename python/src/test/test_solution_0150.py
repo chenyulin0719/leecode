@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_wordBreak(self):
-        from solution_150 import Solution
+        from solution_0150 import Solution
         solution = Solution()
         tokens1 = ["2", "1", "+", "3", "*"]
         tokens2 = ["4", "13", "5", "/", "+"]

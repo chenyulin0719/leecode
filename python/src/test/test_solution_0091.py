@@ -4,7 +4,7 @@ import unittest
 class Test(unittest.TestCase):
 
     def test_numDecodings(self):
-        from solution_091 import Solution
+        from solution_0091 import Solution
         solution = Solution()
         s1 = "12"
         s2 = "226"
